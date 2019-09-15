@@ -31,7 +31,8 @@ public class TextHandleService {
             return dbConnection.globalSearch(userText);
 
         } else if (userText.startsWith(Commands.HELP.getCommand()) || userText.equalsIgnoreCase("/start")) {
-            return "Hi! Available commands:\nWho is the head of department {department_name}\nShow {department_name} statistics\n" +
+             return "Hi! Available departments: Math, Computer science, Physics\n" +
+                    "Available commands:\nWho is the head of department {department_name}\nShow {department_name} statistics\n" +
                     "Show average salary for department {department_name}\nShow count of employees for {department_name}\nGlobal search by {template}" +
                     "\nI'm sorry if I'm slow, it is just because each message travels thousands of kilometers\nAnd please don't use dot (It makes me hurt)";
         }
